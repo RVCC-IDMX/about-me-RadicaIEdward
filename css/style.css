@@ -1,0 +1,31 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #78eb40;
+  color: #168eeb;
+}
+
+h1, h2, h3 h4, h5, h6 {
+  font-family: 'Bungee Shade', cursive;;
+  font-size: 40pt;
+
+}
+
+header{ 
+  text-align: center;
+}
+
+.myface, footer {
+  text-align: center;
+}
+
+.am {
+  text-align: center;
+}
+
+.can {
+  text-align: right;
+}
+
+.realface{
+  height: 400px;
+}
