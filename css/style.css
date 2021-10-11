@@ -1,4 +1,4 @@
-body, ul {
+body, ul, figure {
   font-family: 'Roboto Mono', monospace;
   background-color: #78eb40;
   color: #168eeb;
@@ -6,11 +6,13 @@ body, ul {
 
 h1, h2, h3 h4, h5, h6 {
   font-family: 'Bungee Shade', cursive;;
-  font-size: 40pt;
-
 }
 
-header{ 
+h1 {
+  font-size: 40pt;
+}
+
+header { 
   text-align: center;
 }
 
@@ -26,22 +28,43 @@ header{
   text-align: right;
 }
 
-.realface{
+.realface {
   height: 400px;
 }
 
-.hobby-lord{
-  font-size: 20pt;
-  border: 1px solid black;
+/* Hobbies */
+
+.hobby-lord .photo-lord {
   margin-bottom: 0px;
-
 }
 
-.hobbies{  
-  margin-top: 0px;  
+.hobbies {  
+  margin-top: 0px;
 }
 
-.hobby{
-  font-size: 12pt;
+.hobby:hover {
+  color: #4be9f5;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
+
+/* Gallery */
+
+.photo-lord {
+  text-align: center;
+}
+
+.gallery {
+    border: 10px solid #07f083
+}
+
+.gallery img {
+  max-width: 100%;
+  text-align: center;
+}
+
+.gallery figure {
+  text-align: center;
+}
+
 
