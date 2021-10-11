@@ -1,4 +1,4 @@
-body {
+body, ul {
   font-family: 'Roboto Mono', monospace;
   background-color: #78eb40;
   color: #168eeb;
@@ -29,3 +29,19 @@ header{
 .realface{
   height: 400px;
 }
+
+.hobby-lord{
+  font-size: 20pt;
+  border: 1px solid black;
+  margin-bottom: 0px;
+
+}
+
+.hobbies{  
+  margin-top: 0px;  
+}
+
+.hobby{
+  font-size: 12pt;
+}
+
