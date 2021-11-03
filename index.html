@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 
@@ -23,15 +23,15 @@
   <header>
       <!--  the header shows the logo and page title -->
       <img src="img/logo-96X96.svg" alt="Blue origami bird logo">
-      <h1>Web Dev I - It's Alive... ALLLLLIVE!!!</h1>
+      <h1>Web Dev I</h1>
   </header>
 
   <main>
     <!-- the main envelopes important page content -->
 
-    <section class="myface"> 
+    <section id="hero"> 
        <!--  hero section: shows profile image, name, & location -->
-      <img class="realface" src="img/avataaars.png" alt="Avatar picture of me">
+      <img src="img/avataaars.png" alt="Avatar picture of me">
 
       <div>
         <p>Eddie Galindez</p>
@@ -41,100 +41,116 @@
       <!-- close hero section -->
     </section>
     
-    <section>
+    <section id="bio">
 
       <!-- bio section!: person info (not too personal)-->
-      <h2>Biography</h2>
+      <h2>Biography:</h2>
 
       <div>
-        
-        <p class="want">I want to be...</p>
-        <p class="want">A programmer.</p>
-        <br>
+          
+        <div class="bio1">
+          <p>I want to be...</p>
+          <p>A programmer.</p>
+          <br>
+        </div>
 
-        <p class="am">I am...</p>
-        <p class="am">A DJ.</p>
-        <br>
+        <div class="bio2">
+          <p>I am...</p>
+          <p>A DJ.</p>
+          <br>
+        </div>
 
-        <p class="can">I can...</p>
-        <p class="can">Get down on the dancefloor!</p>
-        <br>
+        <div class="bio3">
+          <p>I can...</p>
+          <p>Get down on the dancefloor!</p>
+          <br>
+        </div>
 
-        <p>I'll be...</p>
-        <p>There for you!</p>
-        <p>These five words I swear to you!</p>
-        <p>When you breathe, I wanna be the air for you!</p>
-        <a href="https://www.youtube.com/watch?v=mh8MIp2FOhc&t=76s">I'll be there for you!</a>
-        
+          <p>I'll be...</p>
+          <p>There for you!</p>
+          <p>These five words I swear to you!</p>
+          <p>When you breathe, I wanna be the air for you!</p>
+          <a href="https://www.youtube.com/watch?v=mh8MIp2FOhc&t=76s">I'll be there for you!</a>
+          
       </div>
 
     </section>
 
-    <section>
-      <!-- hobby section!: AKA why i'm so cool-->
-      <h2 class="hobby-lord">Hobbies!!!</h2>
+    <section id="hobbies">
 
-      <ul class="hobbies">
-        <li class="hobby">Cactus</li>
-        <li class="hobby">Snowboarding</li>
-        <li class="hobby">Spinning banger tracks, my dude</li>
+      <h2>Hobbies:</h2>
+
+      <ul>
+        <li>Snowboarding</li> 
+        <li>DJing</li>
+        <li>Dancing!</li>
+        <li>Cooking</li>
       </ul>
 
+    </section>
 
+    <section id="gallery">
+
+      <h2>Photo Gallery</h2>
+
+      <hr>
+
+      <figure>
+        <img src="img/head-fones-640w.jpeg" alt="A pair of black headphones">
+        <figcaption class="figcap1">A pair of Sennheiser HD-25s, a DJ favorite.</figcaption>
+      </figure>
+
+      <hr>
+
+      <figure>
+        <img src="img/cactus-friend-640w.jpeg" alt="A small cactus named Chip">
+        <figcaption>This is Chip. He is a cactus.</figcaption>
+      </figure>
+
+      <hr>
+
+      <figure>
+        <img src="img/major-bomb-640w.jpeg" alt="A person decked out in sweet snowboarding gear">
+        <figcaption>Ground Control to Major Bomb...</figcaption>
+      </figure>
 
     </section>
 
-    <section class="gallery">
-      <h2 class="photo-lord">Photo Fun Times</h2>
-      <hr>
-      <figure>
-          <img src="img/cactus-friend-640w.jpeg" alt="A cactus in a clay pot. His name is Chip.">
-          <figcaption class="chip">Figcactus</figcaption>
-      </figure>
-      <hr>
-      <figure>
-        <img src="img/head-fones-640w.jpeg" alt="Black Sennheiser HD 25 headphones hanging on the edge of a white shelf.">
-        <figcaption class="chip">Considered to be the "Industry Standard" for DJs, HD 25 can be found in DJ Booths around the world. Performs exceptionally well in loud environments.<figcaption>
-      </figure>
-      <hr>
+    <article id="lit">
 
-        <figure>
-          <img src="img/major-bomb-640w.jpeg" alt="Major Bomb, a snowboarder all clad in pink, ready to bomb some mountains.">
-          <figcaption class="chip">Ski Patrol to Major Bomb... Commencing Countdown, Bindings On...</figcaption>
-    </figure>
-
-    </section>
-
-    <article class="lit">
-
-      <h2>A Textual Conveyance of Pride and Prejudice</h2>
+      <h2>An Excerpt from Dr. Jekyll and Mr. Hyde</h2>
 
       <div>
-        <p>“By the bye, Charles, are you really serious in meditating a dance at Netherfield? I would advise you, before you determine on it, to consult the wishes of the present party; I am much mistaken if there are not some among us to whom a ball would be rather a punishment than a pleasure.”</p>
+        <p>As Bradshaw left, the lawyer looked at his watch. “And now, Poole, let us get to ours,” he said; and taking the poker under his arm, led the way into the yard. The scud had banked over the moon, and it was now quite dark. The wind, which only broke in puffs and draughts into that deep well of building, tossed the light of the candle to and fro about their steps, until they came into the shelter of the theatre, where they sat down silently to wait. London hummed solemnly all around; but nearer at hand, the stillness was only broken by the sounds of a footfall moving to and fro along the cabinet floor.</p>
 
-        <p>“If you mean Darcy,” cried her brother, “he may go to bed, if he chooses, before it begins--but as for the ball, it is quite a settled thing; and as soon as Nicholls has made white soup enough, I shall send round my cards.”</p>
+        <p>So it will walk all day, sir,” whispered Poole; “ay, and the better part of the night. Only when a new sample comes from the chemist, there’s a bit of a break. Ah, it’s an ill conscience that’s such an enemy to rest! Ah, sir, there’s blood foully shed in every step of it! But hark again, a little closer--put your heart in your ears, Mr. Utterson, and tell me, is that the doctor’s foot?”</p>
 
-        <p>“I should like balls infinitely better,” she replied, “if they were carried on in a different manner; but there is something insufferably tedious in the usual process of such a meeting. It would surely be much more rational if conversation instead of dancing were made the order of the day.”</p>
+        <p>The steps fell lightly and oddly, with a certain swing, for all they went so slowly; it was different indeed from the heavy creaking tread of Henry Jekyll. Utterson sighed. “Is there never anything else?” he asked.</p>
 
-        <p>“Much more rational, my dear Caroline, I dare say, but it would not be near so much like a ball.”</p>
-
-        <p>Miss Bingley made no answer, and soon afterwards she got up and walked about the room. Her figure was elegant, and she walked well; but Darcy, at whom it was all aimed, was still inflexibly studious. In the desperation of her feelings, she resolved on one effort more, and, turning to Elizabeth, said:</p>
-
-        <p>“Miss Eliza Bennet, let me persuade you to follow my example, and take a turn about the room. I assure you it is very refreshing after sitting so long in one attitude.”</p>
-
-        <p>Elizabeth was surprised, but agreed to it immediately. Miss Bingley succeeded no less in the real object of her civility; Mr. Darcy looked up. He was as much awake to the novelty of attention in that quarter as Elizabeth herself could be, and unconsciously closed his book. He was directly invited to join their party, but he declined it, observing that he could imagine but two motives for their choosing to walk up and down the room together, with either of which motives his joining them would interfere. “What could he mean? She was dying to know what could be his meaning?”--and asked Elizabeth whether she could at all understand him?</p>
-
-        <p>“Not at all,” was her answer; “but depend upon it, he means to be severe on us, and our surest way of disappointing him will be to ask nothing about it.”</p>
-
-        <p>Miss Bingley, however, was incapable of disappointing Mr. Darcy in anything, and persevered therefore in requiring an explanation of his two motives.</p>
-
-        <p>“I have not the smallest objection to explaining them,” said he, as soon as she allowed him to speak. “You either choose this method of passing the evening because you are in each other’s confidence, and have secret affairs to discuss, or because you are conscious that your figures appear to the greatest advantage in walking; if the first, I would be completely in your way, and if the second, I can admire you much better as I sit by the fire.”</p>
+        <p>But now the ten minutes drew to an end. Poole disinterred the axe from under a stack of packing straw; the candle was set upon the nearest table to light them to the attack; and they drew near with bated breath to where that patient foot was still going up and down, up and down, in the quiet of the night. “Jekyll,” cried Utterson, with a loud voice, “I demand to see you.” He paused a moment, but there came no reply. “I give you fair warning, our suspicions are aroused, and I must and shall see you,” he resumed; “if not by fair means, then by foul--if not of your consent, then by brute force!”</p>
       </div>
+
     </article>
+    
+    <section id="video">
+
+      <h2>A Dog Video</h2>
+
+        <div class="videowrapper">
+
+          <iframe class="dogVideo" width="560" height="315" src="https://www.youtube.com/embed/e1hYHcA98XI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <p>A dancing dog</p>
+    </section>
 
   </main>
 
-  <footer>Eddie G©</footer>
+  <footer>
+
+      ©2021 - Eddie G
+
+  </footer>
 
 </body>
 </html>

@@ -1,11 +1,14 @@
-body, ul, figure {
-  font-family: 'Roboto Mono', monospace;
+/* color palette #168EEB #4BE9F5 #8bDbb0 #07f083 #78eb40 */
+body {
+  font-family: "Roboto Mono";
   background-color: #78eb40;
   color: #168eeb;
 }
 
-h1, h2, h3 h4, h5, h6 {
-  font-family: 'Bungee Shade', cursive;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bungee Shade";
+  text-align: center;
+  
 }
 
 h1 {
@@ -16,96 +19,128 @@ h2 {
   margin: .1em;
 }
 
-header { 
+header {
   text-align: center;
 }
 
-.myface, footer {
+/* Hero Section */
+
+#hero, footer {
+  background-color: #07f083;
+  border: 2px solid #168eeb;
+  text-align: center;
+  padding: 10px;
+}
+
+#hero img {
+  width: 300px;
+}
+
+/* Bio Section */
+
+#bio {
   text-align: center;
 }
 
-.am {
-  text-align: center;
+.bio1 {
+  text-align: left;
 }
 
-.can {
+.bio3 {
   text-align: right;
 }
 
-.realface {
-  height: 400px;
-}
+/* Hobbies Section */
 
-/* Hobbies */
-
-section .hobbies {
+section#hobbies {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hobby-lord .photo-lord {
-  margin-bottom: 0px;
+#hobbies ul li:hover { 
+  color: #4BE9F5;
 }
 
-.hobbies {  
-  margin-top: 0px;
+/* Gallery Section */
+
+#gallery {
+  border: 2px solid #168eeb;
+  margin-bottom: 2rem;
 }
 
-.hobby:hover {
-  color: #4be9f5;
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-/* Gallery */
-
-.photo-lord {
-  text-align: center;
-}
-
-.gallery {
-    border: 10px solid #07f083
-}
-
-.gallery img {
+#gallery img {
   max-width: 100%;
+}
+
+#gallery figure {
   text-align: center;
 }
 
-.gallery figure {
-  text-align: center;
+/* Literature Section */
+
+#lit {
+  border: 2px solid #168eeb;
+  margin-bottom: 2rem;
 }
 
-.lit {
-  text-align: center;
-}
-
-.lit div {
+#lit div {
   padding: 2rem;
   max-width: 40rem;
   margin: 0 auto;
 }
 
-.lit div p {
+#lit div p{
   padding: 0.3rem 0;
   clear: both;
 }
 
 /* Dropcaps */
 
-.lit div p:first-child:first-letter {
-  color: #168eeb;
+#lit div p:first-child:first-letter {
+  color: #168EEB;
+  background-image: radial-gradient(#8bDbb0, #4BE9F5);
   float: left;
-  font-size: 3em;
-  padding: .25em;
-  margin-right: .25m;
+  font-size: 2em;
+  padding: .3em;
+  margin-right: .25em;
   line-height: .65;
-  border: 3px solid #4BE9f5;
-
+  border: 5px outset #168EEB;
+  font-family: "Bungee Shade";
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+  border-top-left-radius: .1em;
+  border-top-right-radius: .1em; 
 }
 
+/* Video Section */
+
+#video {
+  text-align: center;
+  border: 2px solid #168eeb;
+}
+
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+.videowrapper iframe {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+
+
 /* Tablet Size */
+
 @media screen and (min-width: 60em) {
   figure {
     display: grid;
@@ -120,32 +155,36 @@ section .hobbies {
     margin-left: 1rem;
   }
 
-  figure img{
-    width: 100;
+  figure img {
+    width: 100%;
   }
-  
-  .lit div {
+
+  #lit div {
     max-width: 100%;
     columns: 20rem;
   }
+
 }
 
 /* Large Screen Size */
+
 @media screen and (min-width: 100em) {
-  .gallery {
+
+  #gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 
   hr {
     display: none;
   }
 
-  .gallery h2 {
-    grid: 1 / 4;
+  #gallery h2 {
+    grid-column: 1 / -1;
   }
 
   figure {
     display: block;
   }
+
 }
