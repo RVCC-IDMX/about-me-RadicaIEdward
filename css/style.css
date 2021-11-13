@@ -179,7 +179,7 @@ legend {
 }
 
 #contact ul {
-  list-style: none; 
+  list-style: none;
   padding: 0px;
 }
 
@@ -188,7 +188,7 @@ legend {
 }
 
 #contact button {
-  background-color: #168EEB
+  background-color: #168EEB;
   color: white;
   border: 1px solid #168EEB;
   max-width: 400px;
